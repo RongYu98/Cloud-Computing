@@ -1,0 +1,30 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="../static/styles/page.css">
+  <body>
+    <h3>THIS PAGE IS CORNFLOWER BLUE!!! HAIL THE CORNFLOWER!!!!!!!! :D
+    <br>
+    Hello {{name}}, {{date}}
+    <br>
+
+    <table style="border:3px solid blue;" height="90" width="90">
+      <tr width="30" height="30">
+	<td id="0" style="border:3px solid blue;" width="33%"> </td>
+	<td id="1" style="border:3px solid blue;" width="33%"> </td>
+	<td id="2" style="border:3px solid blue;" width="33%"> </td>
+      </tr> <tr width="30" height="30">
+        <td id="3" style="border:3px solid blue;" width="33%"> </td>
+	<td id="4" style="border:3px solid blue;" width="33%"> </td>
+        <td id="5" style="border:3px solid blue;" width="33%"> </td>
+      </tr> <tr width="30" height="30">
+        <td id="6" style="border:3px solid blue;" width="33%"> </td>
+	<td id="7" style="border:3px solid blue;" width="33%"> </td>
+        <td id="8" style="border:3px solid blue;" width="33%"> </td>
+      </tr>
+    </table>
+    <div id="winner"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/javascript/post_page.js"></script>
+	
+  </body>
+</html>
+

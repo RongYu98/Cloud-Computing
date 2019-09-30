@@ -1,0 +1,21 @@
+# import the smtplib module. It should be included in Python by default
+import smtplib
+
+
+sender = 'ubuntu@hw0.cloud.compas.cs.stonybrook.edu'
+receivers = ['stuy.rong.yu@gmail.com']
+
+message = """From: Ubuntuu <ubuntu@hw0.cloud.compas.cs.stonybrook.edu>
+To: Rong Yu <stuy.rong.yu@gmail.com>
+Subject: SMTP e-mail test
+
+Please work.
+"""
+
+try:
+   smtpObj = smtplib.SMTP('localhost')
+   smtpObj.sendmail(sender, receivers, message)         
+   print "Successfully sent email"
+except Exception as e:
+   print(e)
+   print "Error: unable to send email"

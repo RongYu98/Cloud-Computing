@@ -1,0 +1,26 @@
+---
+- hosts: hw1
+  remote_user: ubuntu
+  become: yes
+
+  tasks:
+    - name: download nginx
+      yum:
+        name: nginx
+        state: latest
+
+    - name: download github repo
+      git: repo=https://github.com/RongYu98/Cloud-Computing.git
+      dest=~/Cloud-Computing
+      force=yes
+      recursive=no
+      
+    - name: copy the github repo over to the http folder?
+      copy:
+	src: ~/Cloud-Computing/hw0.html
+	dest: ~/../../var/www/html/
+
+    - name: restart/start nginx
+      service:
+	name: nginx
+	state: started
